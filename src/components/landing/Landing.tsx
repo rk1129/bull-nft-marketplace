@@ -1,52 +1,150 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CollectionView from "./collectionview/CollectionView";
 
 import { ReactComponent as RightVectorSM } from "../../assets/img/sm-vector-right.svg";
 import { ReactComponent as RightVectorLG } from "../../assets/img/lg-vector-right.svg";
 import { ReactComponent as LeftVectorSM } from "../../assets/img/sm-vector-left.svg";
 import { ReactComponent as LeftVectorLG } from "../../assets/img/lg-vector-left.svg";
 
+import NftImg1 from "../../assets/img/nft/1.png";
+import NftImg2 from "../../assets/img/nft/2.png";
+import NftImg3 from "../../assets/img/nft/3.png";
+import NftImg4 from "../../assets/img/nft/4.png";
+
 const Landing = () => {
   return (
     <div className="bg-[#141414]">
       <div className="landing-bg flex flex-col items-center">
-        <div className="relative max-w-[679px] w-full mt-[118px] flex flex-col items-center">
-          <div className="w-full flex justify-between absolute top-0 left-0">
-            <div className="relative">
-              <motion.div
-                animate={{
-                  opacity: [0, 1, 1, 0, 0],
-                }}
-                className="z-10"
-                transition={{
-                  duration: 2,
-                  ease: "easeInOut",
-                  times: [0, 0.6, 0.8, 0.9, 1],
-                  repeat: Infinity,
-                  repeatDelay: 1,
-                }}
-              >
-                <LeftVectorLG />
-              </motion.div>
-              <LeftVectorSM className="absolute top-0 left-2" />
+        <div className="relative max-w-[1300px] w-full mt-[118px] flex flex-col items-center">
+          <div className="w-full flex absolute top-0 left-0 justify-center">
+            <div className="w-full max-w-[679px] flex justify-between ">
+              <div className="relative">
+                <motion.div
+                  animate={{
+                    opacity: [0, 1, 1, 0, 0],
+                  }}
+                  className="z-10"
+                  transition={{
+                    duration: 2,
+                    ease: "easeInOut",
+                    times: [0, 0.6, 0.8, 0.9, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1,
+                  }}
+                >
+                  <LeftVectorLG />
+                </motion.div>
+                <LeftVectorSM className="absolute top-0 left-2" />
+              </div>
+              <div className="relative mt-1">
+                <motion.div
+                  animate={{
+                    opacity: [0, 1, 1, 0, 0],
+                  }}
+                  className="z-10"
+                  transition={{
+                    duration: 2,
+                    ease: "easeInOut",
+                    times: [0, 0.6, 0.8, 0.9, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1,
+                  }}
+                >
+                  <RightVectorLG />
+                </motion.div>
+                <RightVectorSM className="absolute top-0" />
+              </div>
             </div>
-            <div className="relative mt-1">
-              <motion.div
+          </div>
+          <div className="w-[1300px] absolute top-0 left-0 flex justify-between">
+            <div>
+              <motion.img
+                className="absolute top-0 w-[260px] z-10 shadow-[12px_4px_7px_-1px_rgba(0,0,0,0.25);] rounded-[2px] border-t-2 border-r-[3px] border-b-[5px] border-l-[5px]"
+                src={NftImg1}
+                alt=""
                 animate={{
-                  opacity: [0, 1, 1, 0, 0],
+                  borderImage: [
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                  ],
                 }}
-                className="z-10"
                 transition={{
                   duration: 2,
                   ease: "easeInOut",
-                  times: [0, 0.6, 0.8, 0.9, 1],
+                  times: [0, 0.6, 0.8, 0.9, 0.95, 1],
                   repeat: Infinity,
                   repeatDelay: 1,
                 }}
-              >
-                <RightVectorLG />
-              </motion.div>
-              <RightVectorSM className="absolute top-0" />
+              />
+              <motion.img
+                className="mt-[240px] ml-[62px] w-[260px] shadow-[12px_4px_7px_-1px_rgba(0,0,0,0.25);] rounded-[2px] border-t-2 border-r-[3px] border-b-[5px] border-l-[5px] z-0"
+                src={NftImg2}
+                alt=""
+                animate={{
+                  borderImage: [
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.6, 0.8, 0.9, 0.95, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              />
+            </div>
+            <div>
+              <motion.img
+                className="absolute w-[260px] top-0 right-0 scale-x-[-1] z-10 shadow-[12px_4px_7px_-1px_rgba(0,0,0,0.25);] rounded-[2px] border-t-2 border-r-[3px] border-b-[5px] border-l-[5px]"
+                src={NftImg3}
+                alt=""
+                animate={{
+                  borderImage: [
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.6, 0.8, 0.9, 0.95, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              />
+              <motion.img
+                className="mt-[240px] mr-[62px] w-[260px] scale-x-[-1] shadow-[12px_4px_7px_-1px_rgba(0,0,0,0.25);] rounded-[2px] border-t-2 border-r-[3px] border-b-[5px] border-l-[5px] z-0"
+                src={NftImg4}
+                alt=""
+                animate={{
+                  borderImage: [
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #FF0099, #FF0099) 1",
+                    "linear-gradient(to top, #DB00FF, #00000000) 1",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.6, 0.8, 0.9, 0.95, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              />
             </div>
           </div>
           <motion.div
@@ -88,16 +186,7 @@ const Landing = () => {
             01:23:45
           </h1>
         </div>
-        <div className="w-full mt-[200px] flex flex-col items-center">
-          <h1 className="font-bold text-[46px] leading-[68px] text-white">
-            OUR LODGE'S NFT COLLECTION
-          </h1>
-          <p className="mt-0.5 text-xl leading-[30px] text-center font-medium text-white">
-            Each Bull features a combination of unique traits,
-            <br /> handcrafted in signature style by our in-house digital
-            artists.
-          </p>
-        </div>
+        <CollectionView />
       </div>
     </div>
   );
