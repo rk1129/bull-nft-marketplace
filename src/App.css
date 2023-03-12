@@ -38,12 +38,123 @@
   }
 }
 
-
 .landing-bg {
   min-height: 10573px;
-  background: radial-gradient(274.58% 19.39% at 154.76% 57.06%, rgba(184, 69, 255, 0.15) 0%, rgba(0, 0, 0, 0) 89.44%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(180deg, rgba(255, 6, 215, 0) 55.39%, rgba(249, 0, 164, 0.15) 59.33%, rgba(252, 48, 97, 0) 64.14%), radial-gradient(89.62% 26.43% at 116.98% 39.02%, rgba(174, 43, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(69.44% 24.41% at -11.88% 38.03%, rgba(225, 43, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(114.1% 8.08% at -18.19% 16.51%, rgba(219, 0, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(92.99% 23.37% at -12.26% 19.98%, rgba(94, 15, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(34.05% 4.54% at 80.66% 4.93%, rgba(66, 0, 255, 0.1) 0%, rgba(0, 26, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(88.03% 29.18% at 108.4% 15.81%, rgba(255, 43, 43, 0.1) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(49.23% 5.86% at 19.76% 3.05%, rgba(255, 0, 245, 0.232) 0%, rgba(20, 20, 20, 0) 79.69%);
+  background: radial-gradient(
+        274.58% 19.39% at 154.76% 57.06%,
+        rgba(184, 69, 255, 0.15) 0%,
+        rgba(0, 0, 0, 0) 89.44%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      180deg,
+      rgba(255, 6, 215, 0) 55.39%,
+      rgba(249, 0, 164, 0.15) 59.33%,
+      rgba(252, 48, 97, 0) 64.14%
+    ),
+    radial-gradient(
+        89.62% 26.43% at 116.98% 39.02%,
+        rgba(174, 43, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        69.44% 24.41% at -11.88% 38.03%,
+        rgba(225, 43, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        114.1% 8.08% at -18.19% 16.51%,
+        rgba(219, 0, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        92.99% 23.37% at -12.26% 19.98%,
+        rgba(94, 15, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        34.05% 4.54% at 80.66% 4.93%,
+        rgba(66, 0, 255, 0.1) 0%,
+        rgba(0, 26, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        88.03% 29.18% at 108.4% 15.81%,
+        rgba(255, 43, 43, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      49.23% 5.86% at 19.76% 3.05%,
+      rgba(255, 0, 245, 0.232) 0%,
+      rgba(20, 20, 20, 0) 79.69%
+    );
 }
 
 .header-content {
-  background: linear-gradient(180deg, #350035 0%, rgba(85, 13, 85, 0) 336.88%, rgba(38, 17, 38, 0) 336.92%);
+  background: linear-gradient(
+    180deg,
+    #350035 0%,
+    rgba(85, 13, 85, 0) 336.88%,
+    rgba(38, 17, 38, 0) 336.92%
+  );
+}
+
+.grandient-border {
+  border-image: linear-gradient(135deg, #00000000, #eb00ff) 1;
+}
+
+.grandient-border-to-left-top {
+  border-image: linear-gradient(45deg, #eb00ff, #00000000) 1;
+}
+
+.fade-in-left-to-right {
+  animation: fadeInLeftToRight 2s;
+}
+
+.fade-in-right-to-left {
+  animation: fadeInRightToLeft 2s;
+}
+
+.fade-in-right-top-to-left-bottom {
+  animation: fadeInRightTopToLeftBottom 2s;
+}
+
+@keyframes fadeInLeftToRight {
+  0% {
+    transform: translate(-100vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeInRightToLeft {
+  0% {
+    transform: translate(100vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeInRightTopToLeftBottom {
+  0% {
+    transform: translate(-100vw, -50vw);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+[data-inviewport-left-to-right].is-inViewport {
+  animation: fadeInLeftToRight 2s;
+}
+
+[data-inviewport-right-to-left].is-inViewport {
+  animation: fadeInRightToLeft 2s;
 }

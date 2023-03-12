@@ -16,7 +16,7 @@ const CollectionView = () => {
           <br /> handcrafted in signature style by our in-house digital artists.
         </p>
       </div>
-      <div className="relative w-full overflow-x-hidden h-[360px]">
+      <div className="relative w-full h-[360px]">
         <div className="flex justify-center items-center h-[360px]">
           <NftItem />
           <NftItem />
@@ -34,7 +34,7 @@ const CollectionView = () => {
           <NftItem />
         </div>
       </div>
-      <div className="flex justify-between max-w-[480px] w-full items-center">
+      <div className="flex justify-between max-w-[480px] w-full items-center overflow-y-hidden">
         <button>
           <FontAwesomeIcon
             icon={solid("chevron-left")}
