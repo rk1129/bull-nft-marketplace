@@ -427,12 +427,20 @@ const Landing = () => {
                 </div>
               </div>
               <div
-                className="flex w-[50%] h-full object-cover"
+                className="flex w-[50%] h-full"
                 data-inviewport-right-to-left
               >
-                <img alt="" src={LandingImg9} className="w-4/12" />
-                <img alt="" src={LandingImg11} className="w-4/12" />
-                <img alt="" src={LandingImg12} className="w-4/12" />
+                <img alt="" src={LandingImg9} className="w-4/12 object-cover" />
+                <img
+                  alt=""
+                  src={LandingImg11}
+                  className="w-4/12 object-cover"
+                />
+                <img
+                  alt=""
+                  src={LandingImg12}
+                  className="w-4/12 object-cover"
+                />
               </div>
             </div>
             <div className="w-full h-[320px] flex justify-between gap-4 relative">
@@ -535,6 +543,11 @@ const Landing = () => {
           <TeamView />
         </div>
         <Faq />
+        <div className="pt-[186px] w-[60%] max-w-[900px]">
+          <div className="w-full flex justify-between">
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );
