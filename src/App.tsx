@@ -8,7 +8,6 @@ function App() {
   useEffect(() => {
     const inViewport = (entries: any, observer: any) => {
       entries.forEach((entry: any) => {
-        console.log("function is called");
         if (!entry.target.classList.contains("temp"))
           entry.target.classList.add("temp");
         else entry.target.classList.add("is-inViewport");
@@ -16,7 +15,6 @@ function App() {
     };
 
     const Obs = new IntersectionObserver(inViewport);
-    console.log("useEffect is called");
 
     const ELsinViewport1 = document.querySelectorAll(
       "[data-inviewport-left-to-right]"
