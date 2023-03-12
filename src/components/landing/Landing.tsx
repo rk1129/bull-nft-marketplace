@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CollectionView from "./collectionview/CollectionView";
+import TeamView from "./collectionview/TeamView";
+import Faq from "./Faq/Faq";
 
 import { ReactComponent as RightVectorSM } from "../../assets/img/sm-vector-right.svg";
 import { ReactComponent as RightVectorLG } from "../../assets/img/lg-vector-right.svg";
@@ -25,8 +27,12 @@ import LandingImg10 from "../../assets/img/langing-img10.png";
 import LandingImg11 from "../../assets/img/langing-img11.png";
 import LandingImg12 from "../../assets/img/langing-img12.png";
 import LandingImg13 from "../../assets/img/langing-img13.png";
-import TeamView from "./collectionview/TeamView";
-import Faq from "./Faq/Faq";
+import DiscordImg from "../../assets/img/discord.png";
+import LinkedInImg from "../../assets/img/linkedin.png";
+import FacebookImg from "../../assets/img/facebook.png";
+import InstaImg from "../../assets/img/instagram.png";
+import BigLogo from "../../assets/img/big-logo.png";
+
 const Landing = () => {
   return (
     <div className="bg-[#141414]">
@@ -544,8 +550,36 @@ const Landing = () => {
         </div>
         <Faq />
         <div className="pt-[186px] w-[60%] max-w-[900px]">
-          <div className="w-full flex justify-between">
-            <img src="" alt="" />
+          <div className="w-full flex justify-between items-end">
+            <div className="flex flex-col items-center w-[311px]">
+              <p className="text-white text-[22px] leading-[33px]">JOIN US</p>
+              <p className="font-bold text-[40px] leading-[60px] text-white">
+                ON DISCORD
+              </p>
+              <img src={DiscordImg} alt="" className="pt-5 w-[146px]" />
+              <div className="flex justify-center gap-[15px] pt-8">
+                <img src={LinkedInImg} className="w-4 h-4" alt="" />
+                <img src={FacebookImg} className="w-4 h-4" alt="" />
+                <img src={InstaImg} className="w-4 h-4" alt="" />
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <p className="font-medium text-primaryColor text-lg leading-[27px] underline">
+                Terms and Conditions
+              </p>
+              <p className="font-medium text-primaryColor text-lg leading-[27px] underline">
+                Privacy Policy
+              </p>
+            </div>
+            <img src={BigLogo} alt="" className="w-[311px] object-cover" />
+          </div>
+          <div className="w-full flex flex-col items-center pt-[77px] pb-[200px]">
+            <p className="text-white font-bold text-lg leading-[27px] text-center">
+              © 2022 - Bulls Lodge NFT - All Rights Reserved.
+            </p>
+            <p className="text-center text-base leading-[27px] text-primaryColor">
+              Contact E-mail: contact@bullslodgenft.com
+            </p>
           </div>
         </div>
       </div>
